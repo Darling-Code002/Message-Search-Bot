@@ -29,12 +29,12 @@ User = Client(
 async def start_handler(_, event: Message):
     await event.reply_text(
         "Hi, I am Messages Search Bot!\n\n"
-        "**Developer:** @AbirHasan2005\n"
-        "**Demo Bot:** @AHListBot",
+        "**Made By:** Substitute\n"
+        "**Bot For:** @For_Otaku",
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-             InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-            [InlineKeyboardButton("Developer - @AbirHasan2005")],
+            [InlineKeyboardButton("💫JOIN ANIME CHANNEL💫", url="https://t.me/For_Otaku"),
+             InlineKeyboardButton("✨ANIME CHAT✨", url="https://t.me/fateunionchat")],
+            [InlineKeyboardButton("⚡ONGOING CHANNEL⚡", url="https://t.me/Otaku_union_ongoing)],
             [InlineKeyboardButton("Search Inline", switch_inline_query_current_chat=""), InlineKeyboardButton("Go Inline", switch_inline_query="")]
         ])
     )
@@ -50,15 +50,15 @@ async def inline_handlers(_, event: InlineQuery):
                 title="This is Inline Messages Search Bot!",
                 description="You can search Channel All Messages using this bot.",
                 input_message_content=InputTextMessageContent(
-                    message_text="Using this Bot you can Search a Channel All Messages using this bot.\n\n"
-                                 "Made by @AbirHasan2005",
+                    message_text="This Bot Is Made To Search Anime In An Efficient Way On @For_Otaku\n\n"
+                                 "Made by Substitute",
                     disable_web_page_preview=True
                 ),
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton("Search Here", switch_inline_query_current_chat="")],
-                    [InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                     InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                    [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")]
+                    [InlineKeyboardButton("💫ANIME CHANNEL💫", url="https://t.me/for_otaku"),
+                     InlineKeyboardButton("✨CHAT GROUP✨", url="https://t.me/fateunionchat")],
+                    [InlineKeyboardButton("⚡ONGOING CHANNEL⚡", url="https://t.me/otaku_union_ongoing")]
                 ])
             )
         )
